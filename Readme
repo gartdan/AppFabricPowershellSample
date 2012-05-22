@@ -1,0 +1,10 @@
+Attached is a sample for calling AppFabric Powershell commands from C# code.  I tested these samples on a machine with Windows Server AppFabric 1.1 installed (the code failed on a machine with only 1.0 installed, so please make sure you have AppFabric 1.1).  There are samples of calling New-Cache, Remove-Cache, Get-Cache, Get-CacheHost to get you started.  Note that the project requires references to the below assemblies, which should be located in the C:\Program Files\AppFabric 1.1 for Windows Server directory.
+
+•	Microsoft.ApplicationServer.Caching.Client 
+•	Microsoft.ApplicationServer.Caching.Core 
+•	Microsoft.ApplicationServer.Caching.SqlProvider - if using SQL config
+•	Microsoft.ApplicationServer.Caching.Management (for the HostInfo, CacheInfo, classes) 
+
+Also requires a reference to System.Management.Automation assembly, which should be located in C:\Program Files (x86)\Reference Assemblies\Microsoft\WindowsPowerShell\v1.0
+
+There also is a is a well written lab online covering how to use the cache at Developer Introduction to Windows Server AppFabric (Part 2): Caching Services.  Section 2 covers invoking Powershell from a .NET application to get metrics or manage a cache.
